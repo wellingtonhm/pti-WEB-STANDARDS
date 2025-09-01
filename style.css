@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: #004aad;
+  color: #fff;
+}
+header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.inicio {
+  background: url("https://picsum.photos/1600/600?random=5") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.inicio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 60px 10%;
+  text-align: center;
+}
+.section h2 {
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #fff;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h3 {
+  margin: 15px 0 5px;
+}
+.card p {
+  padding: 0 15px 20px;
+  font-size: 0.9rem;
+}
+
+#beneficios ul {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+#beneficios li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+.contato input, .contato textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contato button {
+  padding: 12px;
+  background: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.contato button:hover {
+  background: #003080;
+}
+
+footer {
+  background: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  .inicio h1 {
+    font-size: 1.8rem;
+  }
+}
